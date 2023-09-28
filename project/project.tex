@@ -1,0 +1,101 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{url}
+\usepackage[colorlinks]{hyperref}
+\usepackage{listings}
+\usepackage{tikz}
+\usepackage{tkz-euclide}
+\usepackage{svg}
+
+\usetikzlibrary{shapes,positioning,shapes.gates.logic}
+
+\tikzset{ell/.style={circle,draw,minimum height=0.2cm,minimum width=0.2cm,inner sep=0.15cm}}
+\tikzset{rec/.style={rectangle,draw,minimum height=0.5cm,minimum width=0.5cm,inner sep=0.2cm}}
+\tikzset{trp/.style={trapezium,draw,trapezium left angle=120, trapezium right angle=120, minimum height=0.5cm}}
+
+
+%New colors defined below
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+%Code listing style named "mystyle"
+\lstdefinestyle{mystyle}{
+  backgroundcolor=\color{backcolour}, commentstyle=\color{codegreen},
+  keywordstyle=\color{magenta},
+  numberstyle=\tiny\color{codegray},
+  stringstyle=\color{codepurple},
+  basicstyle=\ttfamily\footnotesize,
+  breakatwhitespace=false,         
+  breaklines=true,                 
+  captionpos=b,                    
+  keepspaces=true,                 
+  numbers=left,                    
+  numbersep=5pt,                  
+  showspaces=false,                
+  showstringspaces=false,
+  showtabs=false,                  
+  tabsize=2
+}
+
+%"mystyle" code listing set
+\lstset{style=mystyle}
+
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+\title{Improving GPT Penetration Testing Using Prompt Engineering Techniques
+\thanks{}
+}
+\author{\IEEEauthorblockN{Daniel Lichtenberger}
+\IEEEauthorblockA{\textit{Department of EECS} \\
+\textit{Texas A\&M University-Kingsville}\\
+Kingsville, USA \\
+daniel.lichtenberger@students.tamuk.edu
+}
+\and
+\IEEEauthorblockN{Mengxiang Jiang}
+\IEEEauthorblockA{\textit{Department of EECS} \\
+\textit{Texas A\&M University-Kingsville}\\
+Kingsville, USA \\
+mengxiang.jiang@students.tamuk.edu}
+\and
+\IEEEauthorblockN{Samah Allahyani}
+\IEEEauthorblockA{\textit{Department of EECS} \\
+\textit{Texas A\&M University-Kingsville}\\
+Kingsville, USA \\
+samah.allahyani@students.tamuk.edu}
+}
+
+\maketitle
+
+\begin{abstract}
+    With the introduction of GPT4 in early 2023, many researchers discovered capabilities of the LLM that were in the past lacking. One of these capabilities is penetration testing in the field of cybersecurity. This allows security experts to automate a large part of the vulnerability exploration process since many of the tasks required are fairly routine. A framework for doing this called PentestGPT which was able to perform at the top 1\% of users at the penetration test website HackTheBox. However, it still had difficulties tackling the more difficult servers on the site. In this paper we use some general purpose prompt engineering techniques to see if there are improvements to the penetration testing results.
+\end{abstract}
+
+\section{Introduction} \label{sec:introduction}
+ChatGPT is a large language model (LLM) that generates automated responses that correlates with a response asked by users\cite{engman2023evaluation}. ChatGPT itself exploded in popularity that sparked greater curiosity in the field of artificial intelligence. The model itself has accumulated an information dataset that has expanded in more recent iterations with GPT-4 \cite{hariri2023unlocking}. Apart from ChatGPT, LLMs are becoming an investment that could affect the lives of people depending on their use and accessibility. Cybersecurity is one field that is currently being explored with LLMs such as ChatGPT. Penetration testing is one such topic in the realm of cybersecurity that is being tested with ChatGPT and the results that the model produces.
+
+
+\section{Proposed Approaches} \label{sec:approaches}
+In this section, we will cover the various prompt engineering techniques used to improve GPT4's penetration test performance.
+
+\subsection{Bimodal Predictor} \label{ssec:bimodal}
+
+
+\bibliographystyle{plain}
+\bibliography{project}
+
+\vspace{12pt}
+
+\end{document}
